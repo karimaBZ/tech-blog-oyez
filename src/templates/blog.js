@@ -27,10 +27,10 @@ export default function Blog(props) {
     <Layout>
       <article className={blogTemplateStyles.blog}>
         <figure className={blogTemplateStyles.blog__hero}>
-          <Img
+          {/* <Img
             fluid={data.frontmatter.hero_image.childImageSharp.fluid}
             alt={data.frontmatter.title}
-          />
+          /> */}
         </figure>
         <div className={blogTemplateStyles.blog__info}>
           <h1>{data.frontmatter.title}</h1>
