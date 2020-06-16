@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: content/data/authors.yaml
+  label: Author List
+  match: "**/*"
+  read_only: false
 - type: directory
   path: docs
   label: Pages
