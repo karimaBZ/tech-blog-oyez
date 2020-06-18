@@ -67,7 +67,7 @@ export const getPostData = graphql`
         title
         author
         date(formatString: "MMMM Do, YYYY")
-        
+        hero_image 
       }
       html
     }

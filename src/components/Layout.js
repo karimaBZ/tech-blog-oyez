@@ -20,7 +20,7 @@ export default function Layout(props) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <Header page={props.page} title={title} />
+      <Header page={props.page}/>
       <div className={layoutStyles.content}>{props.children}</div>
     </section>
   )

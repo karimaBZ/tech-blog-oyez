@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import headerStyles from "../styles/components/header.module.scss"
+import ThemeChanger from './themeChanger';
 
 export default function Header(props) {
+  console.log("Header -> props", props)
   return (
     <header
       className={`${headerStyles.header} ${props.page === 'info' &&
@@ -14,24 +16,9 @@ export default function Header(props) {
         aria-label="main navigation"
       >
         <Link to="/">
-          <h1>{props.title}</h1>
+          <img className="logo-positive" src="/static/oyezLogo.jpg" />
         </Link>
-        <div>
-          <h1>
-            <Link
-              to={
-                props.page === 'info'
-                  ? "/"
-                  : "/info"
-              }
-              activeClassName={headerStyles.navItemActive}
-            >
-              {props.page === 'info'
-                ? "close"
-                : "info"}
-            </Link>
-          </h1>
-        </div>
+        <ThemeChanger />
       </nav>
     </header>
   )

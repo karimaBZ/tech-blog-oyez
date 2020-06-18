@@ -1,5 +1,6 @@
 {
   "title": "OYEZ Blog Tech",
-  "description": "list of all blog tech of OYEZ",
-  "repository_url": "https://github.com/karimaBZ/tech-blog-oyez"
+  "description": "Objectif avoir un blog axé tech sur lequel les développeurs pourront écrire des articles, review par toute l'équipe + review parfaite d'orthographe / grammaire afin de faire connaître Oyez dans des sujets très techniques et que l'on soit plus reconnus.",
+  "repository_url": "https://github.com/karimaBZ/tech-blog-oyez",
+  "basePath": "/"
 }

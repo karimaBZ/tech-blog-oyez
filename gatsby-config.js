@@ -7,16 +7,14 @@ module.exports = {
     title: config.title,
     description: config.description,
     repoUrl: config.repository_url,
-    about: config.about,
-    contact: config.contact,
-    primaryColor: config.primary_color,
-    infoData: infoData
+    basePath: config.basePath,
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-yaml",
+    'gatsby-plugin-dark-mode',
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -46,7 +44,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sharp", 
+      resolve: "gatsby-plugin-sharp",
       options: {
         defaultQuality: 75
       }
@@ -57,7 +55,12 @@ module.exports = {
       options: {
         plugins: [
           "gatsby-remark-relative-images",
-          "gatsby-remark-normalize-paths",
+          {
+            resolve: "gatsby-remark-normalize-paths",
+            options: {
+              pathFields: ["image", "cover"],
+            },
+          },
           {
             resolve: "gatsby-remark-images",
             options: {
