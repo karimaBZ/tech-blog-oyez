@@ -1,23 +1,10 @@
 .layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  &.info_page {
-    color: #EBEBEB;
-  }
+  background-color: inherit;
+  padding: 0 32px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .content {
   flex-grow: 1;
-}
-
-@media (min-width: 768px) {
-  .layout {
-    display: block;
-  }
-  .content {
-    flex-grow: none;
-    width: 70%;
-    margin-left: 30%;
-  }
 }

@@ -6,7 +6,6 @@ import Img from 'gatsby-image'
 
 export default function BlogList() {
   const blogData = useBlogData()
-  console.log("BlogList -> blogData", blogData)
   function renderBlogData() {
     return (
       <div>
