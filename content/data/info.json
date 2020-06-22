@@ -1,0 +1,10 @@
+{
+    "componentChunkName": "component---src-pages-info-js",
+    "path": "/info/",
+    "webpackCompilationHash": "",
+    "result": {
+        "pageContext": {
+            "isCreatedByStatefulCreatePages": true
+        }
+    }
+}

@@ -52,7 +52,6 @@ body.dark {
 }
 body {
   font-family: $font-family;
-  border-top: 10px solid var(--primary-color);
   background-color: var(--background);
   color: var(--text-color);
 }
@@ -85,10 +84,27 @@ hr {
 }
 .site-content {
   margin-top: 5rem;
-  .blog-link:not(:last-child) {
-    margin-bottom: 25px;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    margin-top: 32px;
+    .blog-link{
+      display: grid;
+      background-color: var(--card-bg);
+      border-radius: 9px;
+      border: 1px solid var(--card-bdr);
+      box-shadow: 0 0 30px var(--card-shadow);
+      overflow: hidden;
+      line-height: 1.5;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
   }
 }
+
+
 
 
 

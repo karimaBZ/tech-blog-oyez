@@ -15,10 +15,9 @@ export default function BlogList() {
             return (
               <Link to={`/blog/${blog.node.fields.slug}`} key={blog.node.id}>
                 <li className={blogListStyles.li} key={blog.node.fields.slug}>
-                    {console.log("renderBlogData -> blog.node.frontmatter.hero_image", blog.node.frontmatter)}
                   <div className={blogListStyles.list__hero}>
                     <img 
-                    src={`${blog.node.frontmatter.hero_image}`}
+                    src={`/uploads${blog.node.frontmatter.hero_image}`}
                       alt={blog.node.frontmatter.title}
                     />
                   </div>
