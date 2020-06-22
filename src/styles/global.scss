@@ -85,6 +85,9 @@ hr {
 }
 .site-content {
   margin-top: 5rem;
+  .blog-link:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 

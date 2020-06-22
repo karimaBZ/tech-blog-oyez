@@ -8,7 +8,7 @@ export default function BlogList() {
   const blogData = useBlogData()
   function renderBlogData() {
     return (
-      <div>
+      <div className="blog-link">
         {blogData
           .filter(blog => blog.node.frontmatter.title !== "")
           .map(blog => {
@@ -26,6 +26,7 @@ export default function BlogList() {
                     <h2>{blog.node.frontmatter.title}</h2>
                     <h3>{blog.node.frontmatter.date}</h3>
                     <p>{blog.node.excerpt}</p>
+                    <h5>{blog.node.frontmatter.author}</h5>
                   </div>
                 </li>
               </Link>
