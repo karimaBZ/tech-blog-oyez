@@ -11,7 +11,7 @@ export default function IndexPage({ data }) {
         <div className="description">{data.site.siteMetadata.description}</div>
       </div>
       <hr />
-      <section>
+      <section className="site-content">
         <BlogList />
       </section>
     </Layout>
