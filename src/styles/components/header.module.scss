@@ -4,6 +4,7 @@
   border-top: 10px solid var(--primary-color);
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: var(--background);
 }
 
 .header__nav {
@@ -21,7 +22,6 @@
     img {
       margin-bottom: 0;
       padding: 0;
-      width: 100px;
       height: 65px;
     }
     h1 {
