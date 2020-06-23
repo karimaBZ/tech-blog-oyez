@@ -26,7 +26,7 @@ sections:
   path: config.json
   label: Site Info
 upload_dir: static/uploads
-public_path: "/static/uploads"
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":year:/:month:/:filename:"
