@@ -17,6 +17,9 @@ body.light {
   --background: #fff;
   --site-header: var(--background);
   --text-color:#000;
+  --card-bg: #fff;
+  --card-shadow: #d5d5d5;
+  --card-bdr: #eee;
 
 }
 body.dark {
@@ -29,8 +32,9 @@ body.dark {
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
- 
-  
+  --card-bg: #181326;
+  --card-bdr: #181326;
+  --card-shadow: #020204;
 }
 body {
   font-family: $font-family;
@@ -70,9 +74,18 @@ hr {
     margin-top: 32px;
     .blog-link{
       display: grid;
-      grid-template-columns: 50% 50%;
-      grid-column-gap: 1em;
-      grid-row-gap: 1em;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 32px;
+      margin-top: 32px;
+      a {
+        display: grid;
+        background-color: var(--card-bg);
+        border-radius: 9px;
+        border: 1px solid var(--card-bdr);
+        box-shadow: 0 0 30px var(--card-shadow);
+        overflow: hidden;
+        line-height: 1.5;
+      }
     }
   }
 }
