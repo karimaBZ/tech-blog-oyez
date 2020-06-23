@@ -85,20 +85,19 @@ hr {
 .site-content {
   margin-top: 5rem;
   ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
     margin-top: 32px;
     .blog-link{
       display: grid;
-      background-color: var(--card-bg);
-      border-radius: 9px;
-      border: 1px solid var(--card-bdr);
-      box-shadow: 0 0 30px var(--card-shadow);
-      overflow: hidden;
-      line-height: 1.5;
-      &:not(:last-child) {
-        margin-bottom: 25px;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      a {
+        background-color: var(--card-bg);
+        border-radius: 9px;
+        border: 1px solid var(--card-bdr);
+        box-shadow: 0 0 30px var(--card-shadow);
+        overflow: hidden;
+        line-height: 1.5;
       }
     }
   }

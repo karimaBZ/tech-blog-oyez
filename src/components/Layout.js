@@ -14,7 +14,7 @@ export default function Layout(props) {
       }}
     >
       <Helmet>
-        <html lang="en" />
+        <html lang="fr" />
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
