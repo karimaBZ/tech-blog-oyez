@@ -16,6 +16,9 @@
   .list__hero {
     padding: 20px;
     height: 20vh;
+    img {
+      height: inherit;
+    }
   }
   .list__info {
     padding: 20px;
