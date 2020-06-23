@@ -22,17 +22,11 @@
       padding-right: 20px;
     }
     img {
-      object-fit: cover;
-      object-position: 50% 50%;
-      overflow: hidden;
-      background-color:transparent;
       width: 300px;
-      opacity: 1;
-      -webkit-transition: opacity .3s ease;
-      transition: opacity 0.3s ease;
     }
   }
   .list__info {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
