@@ -1,6 +1,6 @@
 ---
 date: 2020-06-17T07:57:36.000+00:00
-hero_image: "/2020/06/me.jpg"
+hero_image: "/2020/06/reactjs.png"
 title: React Js
 author: Karima Ben Zineb
 
