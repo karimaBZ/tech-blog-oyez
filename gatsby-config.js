@@ -1,5 +1,4 @@
 const config = require("./config.json")
-const infoData = require("./content/data/info.json")
 
 module.exports = {
   //this makes the site config available to forestry cms
